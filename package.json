@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "zephyr-webpack-plugin": "^0.0.54"
   },
   "devDependencies": {
     "@babel/core": "^7.22.0",

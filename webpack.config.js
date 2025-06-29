@@ -1,8 +1,9 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { withZephyr } = require("zephyr-webpack-plugin");
 const { ModuleFederationPlugin } = require("webpack").container;
 const path = require("path");
 
-module.exports = {
+module.exports = withZephyr()({
   entry: "./src/index",
   mode: "development",
   devServer: {
@@ -40,4 +41,4 @@ module.exports = {
       template: "./public/index.html",
     }),
   ],
-};
+});
